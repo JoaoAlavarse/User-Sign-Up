@@ -1,9 +1,7 @@
-package JoaoAlavarse.Cadastro.de.Usuarios.Entity;
+package JoaoAlavarse.Blood.Center.Entity;
 
-import JoaoAlavarse.Cadastro.de.Usuarios.DTOs.UserRequestDTO;
+import JoaoAlavarse.Blood.Center.DTOs.UserRequestDTO;
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
 @Entity

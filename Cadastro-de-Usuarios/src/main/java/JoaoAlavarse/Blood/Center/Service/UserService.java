@@ -1,14 +1,13 @@
-package JoaoAlavarse.Cadastro.de.Usuarios.Service;
+package JoaoAlavarse.Blood.Center.Service;
 
-import JoaoAlavarse.Cadastro.de.Usuarios.Constants.Constants;
-import JoaoAlavarse.Cadastro.de.Usuarios.DTOs.UserRequestDTO;
-import JoaoAlavarse.Cadastro.de.Usuarios.Entity.UserEntity;
-import JoaoAlavarse.Cadastro.de.Usuarios.Exceptions.FailedToCreateUserException;
-import JoaoAlavarse.Cadastro.de.Usuarios.Exceptions.FailedToReturnUsersException;
-import JoaoAlavarse.Cadastro.de.Usuarios.Exceptions.InvalidEmailException;
-import JoaoAlavarse.Cadastro.de.Usuarios.Exceptions.InvalidPasswordException;
-import JoaoAlavarse.Cadastro.de.Usuarios.Repository.UserRepository;
-import jakarta.validation.Valid;
+import JoaoAlavarse.Blood.Center.Constants.Constants;
+import JoaoAlavarse.Blood.Center.DTOs.UserRequestDTO;
+import JoaoAlavarse.Blood.Center.Entity.UserEntity;
+import JoaoAlavarse.Blood.Center.Exceptions.FailedToCreateUserException;
+import JoaoAlavarse.Blood.Center.Exceptions.FailedToReturnUsersException;
+import JoaoAlavarse.Blood.Center.Exceptions.InvalidEmailException;
+import JoaoAlavarse.Blood.Center.Exceptions.InvalidPasswordException;
+import JoaoAlavarse.Blood.Center.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,7 +20,7 @@ public class UserService {
     @Autowired
     private UserRepository repository;
 
-    private boolean verifyPassword(String password) throws InvalidPasswordException{
+    private boolean verifyPassword(String password) throws InvalidPasswordException {
         if ( password.length() >= 6 && containSpecialCharacters(password)){
             return true;
         }
@@ -37,7 +36,7 @@ public class UserService {
             return false;
     }
 
-    private boolean verifyEmail(String email) throws InvalidEmailException{
+    private boolean verifyEmail(String email) throws InvalidEmailException {
         Pattern pattern = Pattern.compile(Constants.EMAIL_REGEX);
         Matcher matcher = pattern.matcher(email);
         if (matcher.matches()){

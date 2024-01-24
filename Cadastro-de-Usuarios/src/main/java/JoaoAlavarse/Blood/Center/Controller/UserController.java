@@ -1,8 +1,8 @@
-package JoaoAlavarse.Cadastro.de.Usuarios.Controller;
+package JoaoAlavarse.Blood.Center.Controller;
 
-import JoaoAlavarse.Cadastro.de.Usuarios.DTOs.UserRequestDTO;
-import JoaoAlavarse.Cadastro.de.Usuarios.Entity.UserEntity;
-import JoaoAlavarse.Cadastro.de.Usuarios.Service.UserService;
+import JoaoAlavarse.Blood.Center.DTOs.UserRequestDTO;
+import JoaoAlavarse.Blood.Center.Entity.UserEntity;
+import JoaoAlavarse.Blood.Center.Service.UserService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

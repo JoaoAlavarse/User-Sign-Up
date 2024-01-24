@@ -1,12 +1,11 @@
-package JoaoAlavarse.Cadastro.de.Usuarios.Exceptions.Handler;
+package JoaoAlavarse.Blood.Center.Exceptions.Handler;
 
-import JoaoAlavarse.Cadastro.de.Usuarios.Exceptions.FailedToCreateUserException;
-import JoaoAlavarse.Cadastro.de.Usuarios.Exceptions.FailedToReturnUsersException;
-import JoaoAlavarse.Cadastro.de.Usuarios.Exceptions.InvalidEmailException;
-import JoaoAlavarse.Cadastro.de.Usuarios.Exceptions.InvalidPasswordException;
+import JoaoAlavarse.Blood.Center.Exceptions.FailedToCreateUserException;
+import JoaoAlavarse.Blood.Center.Exceptions.InvalidEmailException;
+import JoaoAlavarse.Blood.Center.Exceptions.InvalidPasswordException;
+import JoaoAlavarse.Blood.Center.Exceptions.FailedToReturnUsersException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;

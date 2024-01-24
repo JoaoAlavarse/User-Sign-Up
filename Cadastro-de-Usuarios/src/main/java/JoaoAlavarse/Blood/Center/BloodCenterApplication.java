@@ -1,13 +1,13 @@
-package JoaoAlavarse.Cadastro.de.Usuarios;
+package JoaoAlavarse.Blood.Center;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CadastroDeUsuariosApplication {
+public class BloodCenterApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CadastroDeUsuariosApplication.class, args);
+		SpringApplication.run(BloodCenterApplication.class, args);
 	}
 
 }

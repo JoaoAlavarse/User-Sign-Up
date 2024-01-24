@@ -1,4 +1,4 @@
-package JoaoAlavarse.Cadastro.de.Usuarios.Constants;
+package JoaoAlavarse.Blood.Center.Constants;
 
 public class Constants {
     public static final String SPECIAL_CHARACTERS = "!@#$%^&*()-_+=<>?";

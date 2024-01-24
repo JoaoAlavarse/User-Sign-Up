@@ -1,4 +1,4 @@
-package JoaoAlavarse.Cadastro.de.Usuarios.DTOs;
+package JoaoAlavarse.Blood.Center.DTOs;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

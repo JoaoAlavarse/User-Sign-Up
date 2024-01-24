@@ -1,4 +1,4 @@
-package JoaoAlavarse.Cadastro.de.Usuarios.Exceptions;
+package JoaoAlavarse.Blood.Center.Exceptions;
 
 public class FailedToReturnUsersException extends RuntimeException{
     public FailedToReturnUsersException() {
